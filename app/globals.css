@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ── 背景 ── */
+  --color-bg: #0b0c11;
+  --color-bg2: #13141b;
+  --color-card: rgba(255, 255, 255, 0.045);
+  --color-card-solid: #16171f;
+  --color-card-solid2: #1b1d27;
+
+  /* ── ボーダー ── */
+  --color-border: rgba(255, 255, 255, 0.085);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+
+  /* ── テキスト ── */
+  --color-text: #f4f5fa;
+  --color-muted: rgba(236, 238, 247, 0.56);
+  --color-faint: rgba(236, 238, 247, 0.34);
+
+  /* ── アクセント ── */
+  --color-lime: #c8ff4d;
+  --color-amber: #ffb13d;
+  --color-g1: #ff8a3d;
+  --color-g2: #ff3d77;
+  --color-g3: #a24bff;
+
+  /* ── フォント ── */
+  --font-sans: -apple-system, "SF Pro Display", "Hiragino Sans", system-ui, sans-serif;
+
+  /* ── 角丸 ── */
+  --radius-card: 24px;
+  --radius-card-sm: 18px;
+}
+
+/* ── グラデーション（CSS変数として定義） ── */
+:root {
+  --grad: linear-gradient(135deg, #ff8a3d 0%, #ff3d77 50%, #a24bff 100%);
+  --grad-v: linear-gradient(160deg, #ff8a3d 0%, #ff3d77 48%, #a24bff 100%);
+  --grad-soft: linear-gradient(135deg, rgba(255, 138, 61, 0.16), rgba(162, 75, 255, 0.18));
+}
