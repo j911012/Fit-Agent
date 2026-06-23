@@ -11,6 +11,7 @@ import { loginSchema, type LoginInput } from "@/lib/validations/auth";
 import Card from "@/components/ui/Card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import GoogleButton from "@/components/auth/GoogleButton";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -84,6 +85,16 @@ export default function LoginPage() {
           {isSubmitting ? <Loader2 className="size-4 animate-spin" /> : "ログイン"}
         </Button>
       </form>
+
+      <div className="mt-4 flex items-center gap-3">
+        <div className="h-px flex-1 bg-border" />
+        <span className="text-xs text-muted">または</span>
+        <div className="h-px flex-1 bg-border" />
+      </div>
+
+      <div className="mt-4">
+        <GoogleButton />
+      </div>
 
       <p className="mt-5 text-center text-xs text-muted">
         アカウントをお持ちでない方は{" "}
